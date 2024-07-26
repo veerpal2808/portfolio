@@ -30,7 +30,7 @@ const ProjectCard = ({ image, title, description, git, technologies }) => {
                         </p>
                     ))}
                 </div>
-                {/* <a href={git} className="text-red-300 border border-gray-200 rounded-lg shadow p-1 sm:p-2 lg:p-3 hover:text-green-500 duration-300">GitHub</a> */}
+                <a href={git} className="text-red-300 border border-gray-200 rounded-lg shadow p-1 sm:p-2 lg:p-3 hover:text-green-500 duration-300">GitHub</a>
             </div>
         </div>
     );
@@ -60,6 +60,14 @@ const Projects = () => {
 
 export const project = [
     {
+        title:'PassOP - Your password manager',
+        description:'A Password Manager application designed to securely store and manage users passwords. The project leverages the MERN stack along with TailwindCSS for styling, providing a robust, responsive, and user-friendly interface',
+
+        image: {vpn},
+         git:'https://github.com/veerpal2808/PassOP.git',
+        technologies:['MongoDb','Express.js' ,'ReactJS' , 'TailwindCss']
+    },
+    {
         title:'iNotebook',
         description:'Developed iNotebook using MERN stack  for efficient note management and retrieval. Created a dynamic, responsive UI and robust backend, ensuring seamless user experience and reliable data handling',
 
@@ -77,13 +85,16 @@ export const project = [
         title:"Women's Safety App",
         description:"Crafted an Android app capable of promptly notifying guardians, complete with the user's location, in instances of emergency,ensuring swift response and assistance during critical situations",
         image: {copeople},
-        
+        git:'https://github.com/veerpal2808/CURescue.git',
+
         technologies:[ 'XML', 'Java','Android Studio']
     },
     {
         title:'Resume Builder',
         description:'This project aimed to simplify the process of crafting professional resumes for job seekers Reactjs.',
         image: {copeople},
+        git:'https://github.com/veerpal2808/muskan-app.git',
+
         technologies:[ 'React JS']
     },
     {
